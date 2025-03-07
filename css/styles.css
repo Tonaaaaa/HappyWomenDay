@@ -402,6 +402,14 @@ h1 {
     font-size: 0.95rem;
 }
 
+/* Polaroid Grid */
+.polaroid-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 .polaroid {
     background: var(--white);
     padding: 10px 10px 30px;
@@ -414,17 +422,16 @@ h1 {
 }
 
 .polaroid:hover {
-    transform: scale(1.05) rotate(var(--rotation));
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    transform: scale(1.1) rotate(var(--rotation));
+    box-shadow: 0 10px 25px rgba(255, 117, 140, 0.3);
 }
 
 .polaroid-img {
     width: 100%;
-    max-width: 100%; /* Giới hạn chiều rộng tối đa */
-    height: auto; /* Chiều cao tự động theo tỷ lệ gốc */
-    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh, không cắt */
-    display: block; /* Đảm bảo ảnh hiển thị như block element */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -432,6 +439,80 @@ h1 {
     font-size: 0.8rem;
     text-align: center;
     color: var(--text-dark);
+}
+
+/* Wish Overlay */
+.wish-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.wish-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wish-overlay-content {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 117, 140, 0.3);
+    overflow: hidden;
+}
+
+.wish-overlay.active .wish-overlay-content {
+    transform: scale(1);
+}
+
+.wish-overlay-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.wish-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-overlay:hover {
+    color: var(--primary);
 }
 
 /* Floating Hearts */
