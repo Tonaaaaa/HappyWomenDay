@@ -17,9 +17,6 @@ const floatingHearts = document.getElementById('floating-hearts');
 const quoteContainer = document.getElementById('quote-container');
 const carouselDots = document.querySelectorAll('.carousel-dot');
 const polaroids = document.querySelectorAll('.polaroid');
-const wishOverlay = document.getElementById('wish-overlay');
-const wishText = document.getElementById('wish-text');
-const closeOverlay = document.getElementById('close-overlay');
 
 // Loading and Welcome Sequence
 window.addEventListener('load', () => {
@@ -92,7 +89,6 @@ closeSpecialWishes.addEventListener('click', () => specialWishesModal.classList.
 window.addEventListener('click', (e) => {
     if (e.target === wishesModal) wishesModal.classList.remove('active');
     if (e.target === specialWishesModal) specialWishesModal.classList.remove('active');
-    if (e.target === wishOverlay) wishOverlay.classList.remove('active');
 });
 
 // Music Toggle
@@ -144,12 +140,6 @@ carouselDots.forEach(dot => {
 polaroids.forEach(polaroid => {
     polaroid.addEventListener('click', () => {
         const wish = polaroid.getAttribute('data-memory');
-        wishText.textContent = wish;
-        wishOverlay.classList.add('active');
+        alert(wish);
     });
-});
-
-// Close Wish Overlay
-closeOverlay.addEventListener('click', () => {
-    wishOverlay.classList.remove('active');
 });

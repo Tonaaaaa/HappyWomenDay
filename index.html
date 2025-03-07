@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loading-screen">
@@ -19,7 +17,7 @@
     <!-- Welcome Modal 1 -->
     <div class="welcome-modal" id="welcome-modal-1">
         <div class="welcome-content">
-            <h2 class="welcome-title">Xin chào Quỳnh Anh!</h2>
+            <h3 class="welcome-title">Xin chào Quỳnh Anh!</h3>
             <p class="welcome-message">
                 Chào mừng em đến với một món quà đặc biệt mà anh đã chuẩn bị nhân ngày 8/3. Đây là một nơi lưu giữ tình
                 cảm và những điều anh muốn gửi đến em.
@@ -132,50 +130,115 @@
                 <button class="close-modal" id="close-memories"><i class="fas fa-times"></i></button>
                 <h3 class="modal-title">Những lời chúc đặc biệt</h3>
                 <p class="message">Chạm vào từng bức ảnh để xem lời chúc dành cho em</p>
-                <div class="polaroid-grid">
-                    <div class="polaroid" style="--rotation: -3deg;"
-                        data-memory="Chúc em luôn rạng rỡ như ánh nắng ban mai, tỏa sáng mọi nơi em đến!">
-                        <img src="images/1.jpg" alt="Ảnh 1" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 1</div>
+                <div class="polaroid-gallery">
+                    <h3 class="gallery-title">Những lời yêu thương từ trái tim</h3>
+                    <div class="polaroid-wrapper">
+                        <div class="polaroid" style="--rotation: -3deg;"
+                            data-memory="Dưới ánh nắng ban mai, em là vầng sáng dịu dàng nhất, tỏa hương yêu thương khắp trái tim anh.">
+                            <div class="polaroid-inner">
+                                <img src="images/1.jpg" alt="Ảnh 1" class="polaroid-img">
+                                <div class="polaroid-caption">Ánh mắt dịu dàng</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
+
+                        <div class="polaroid" style="--rotation: 2deg;"
+                            data-memory="Hạnh phúc của anh là được nắm tay em, cùng bước qua những ngày nắng ấm và đêm mưa dịu dàng.">
+                            <div class="polaroid-inner">
+                                <img src="images/2.jpg" alt="Ảnh 2" class="polaroid-img">
+                                <div class="polaroid-caption">Giấc mơ đôi ta</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
+
+                        <div class="polaroid" style="--rotation: -2deg;"
+                            data-memory="Em là ngọn gió xuân, cuốn anh vào những giấc mơ ngọt ngào, nơi chỉ có tình yêu mãi mãi.">
+                            <div class="polaroid-inner">
+                                <img src="images/3.jpg" alt="Ảnh 3" class="polaroid-img">
+                                <div class="polaroid-caption">Gió xuân khe khẽ</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
+
+                        <div class="polaroid" style="--rotation: 3deg;"
+                            data-memory="Nụ cười của em như ánh sao, dẫn lối anh qua những ngày dài, đến bến bờ hạnh phúc.">
+                            <div class="polaroid-inner">
+                                <img src="images/4.jpg" alt="Ảnh 4" class="polaroid-img">
+                                <div class="polaroid-caption">Ngôi sao của anh</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
+
+                        <div class="polaroid" style="--rotation: -1deg;"
+                            data-memory="Anh nguyện dành cả thế gian này để yêu thương, che chở cho em, mãi mãi không rời xa.">
+                            <div class="polaroid-inner">
+                                <img src="images/5.jpg" alt="Ảnh 5" class="polaroid-img">
+                                <div class="polaroid-caption">Lời thề dưới trăng</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
+
+                        <div class="polaroid" style="--rotation: 2deg;"
+                            data-memory="Em là đóa hoa đẹp nhất trong khu vườn lòng anh, nở rộ mãi mãi giữa những ngày yêu.">
+                            <div class="polaroid-inner">
+                                <img src="images/6.jpg" alt="Ảnh 6" class="polaroid-img">
+                                <div class="polaroid-caption">Đóa hoa vĩnh cửu</div>
+                                <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                                <div class="polaroid-hover">
+                                    <span>Xem lời nhắn</span>
+                                </div>
+                            </div>
+                            <div class="polaroid-ribbon"></div>
+                        </div>
                     </div>
-                    <div class="polaroid" style="--rotation: 2deg;"
-                        data-memory="Chúc em mãi hạnh phúc, bình an và gặp thật nhiều may mắn trong cuộc sống!">
-                        <img src="images/2.jpg" alt="Ảnh 2" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 2</div>
-                    </div>
-                    <div class="polaroid" style="--rotation: -2deg;"
-                        data-memory="Chúc em luôn mạnh mẽ, tự tin và đạt được mọi ước mơ của mình!">
-                        <img src="images/3.jpg" alt="Ảnh 3" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 3</div>
-                    </div>
-                    <div class="polaroid" style="--rotation: 3deg;"
-                        data-memory="Chúc em mỗi ngày đều tràn đầy niềm vui và những điều tuyệt vời nhất!">
-                        <img src="images/4.jpg" alt="Ảnh 4" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 4</div>
-                    </div>
-                    <div class="polaroid" style="--rotation: -1deg;"
-                        data-memory="Chúc em luôn được yêu thương, trân trọng và hạnh phúc mãi mãi!">
-                        <img src="images/5.jpg" alt="Ảnh 5" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 5</div>
-                    </div>
-                    <div class="polaroid" style="--rotation: 2deg;"
-                        data-memory="Chúc em mãi xinh đẹp, dịu dàng và là nguồn cảm hứng cho mọi người xung quanh!">
-                        <img src="images/6.jpg" alt="Ảnh 6" class="polaroid-img">
-                        <div class="polaroid-caption">Lời chúc 6</div>
+
+                    <div class="love-note">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Mỗi khoảnh khắc bên em đều là điều kỳ diệu. Anh trân trọng tình yêu của chúng mình và hứa sẽ
+                            luôn giữ gìn nó như báu vật quý giá nhất.</p>
+                        <i class="fas fa-quote-right quote-icon"></i>
                     </div>
                 </div>
 
-                <!-- Overlay cho lời chúc -->
+                <!-- Overlay cho lời chúc (chỉ giữ một cái) -->
                 <div class="wish-overlay" id="wish-overlay">
                     <div class="wish-overlay-content">
                         <button class="close-overlay" id="close-overlay"><i class="fas fa-times"></i></button>
+                        <div class="wish-header">
+                            <i class="fas fa-heart heart-pulse"></i>
+                            <h3>Lời nhắn yêu thương</h3>
+                            <i class="fas fa-heart heart-pulse"></i>
+                        </div>
                         <div class="wish-text" id="wish-text"></div>
+                        <div class="wish-footer">
+                            <div class="signature">Yêu em mãi mãi ❤️</div>
+                        </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
+    </div>
 
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
