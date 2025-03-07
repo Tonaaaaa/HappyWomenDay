@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 8/3 - Dương Quỳnh Anh</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
+        <div class="loading-text">Đang chuẩn bị một bất ngờ cho bạn...</div>
+    </div>
+
+    <!-- Welcome Modal 1 -->
+    <div class="welcome-modal" id="welcome-modal-1">
+        <div class="welcome-content">
+            <h2 class="welcome-title">Xin chào Quỳnh Anh!</h2>
+            <p class="welcome-message">
+                Chào mừng em đến với một món quà đặc biệt mà anh đã chuẩn bị nhân ngày 8/3. Đây là một nơi lưu giữ tình
+                cảm và những điều anh muốn gửi đến em.
+            </p>
+            <button class="next-btn" id="next-btn-1">Tiếp tục</button>
+        </div>
+    </div>
+
+    <!-- Welcome Modal 2 -->
+    <div class="welcome-modal" id="welcome-modal-2">
+        <div class="welcome-content">
+            <h2 class="welcome-title">Sẵn sàng chưa?</h2>
+            <p class="welcome-message">
+                Bên trong là những lời yêu thương, kỷ niệm đẹp và cả những điều bất ngờ dành riêng cho em. Hãy cùng anh
+                khám phá nhé!
+            </p>
+            <button class="next-btn" id="next-btn-2">Khám phá ngay</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-wrapper" id="main-content">
+        <div class="petals-container" id="petals-container"></div>
+        <div class="floating-hearts" id="floating-hearts"></div>
+
+        <div class="hero">
+            <div class="card">
+                <div class="flower-decoration flower-1"><i class="fas fa-spa"></i></div>
+                <div class="flower-decoration flower-2"><i class="fas fa-spa"></i></div>
+
+                <div class="avatar-container">
+                    <div class="avatar"><i class="fas fa-heart"></i></div>
+                    <div class="orbit"></div>
+                </div>
+
+                <h1>Chúc mừng 8/3</h1>
+                <div class="sub-title">Dương Quỳnh Anh</div>
+
+                <div class="message">
+                    <p>Gửi người phụ nữ tuyệt vời nhất của anh,</p>
+                    <p>Nhân ngày Quốc tế Phụ nữ, anh muốn gửi đến em những lời chúc tốt đẹp nhất. Cảm ơn em đã luôn là
+                        nguồn cảm hứng và niềm vui trong cuộc sống của anh.</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="quote-carousel">
+                    <div class="quote-container" id="quote-container">
+                        <div class="quote">
+                            <p class="quote-text">"Em là ánh nắng trong ngày mưa, là ngọn gió mát trong ngày hè, là tất
+                                cả những điều tuyệt vời nhất."</p>
+                        </div>
+                        <div class="quote">
+                            <p class="quote-text">"Nụ cười của em là món quà đẹp nhất mà anh từng nhận được."</p>
+                        </div>
+                        <div class="quote">
+                            <p class="quote-text">"Mỗi ngày bên em là một ngày tràn đầy hạnh phúc."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <div class="carousel-dot active" data-index="0"></div>
+                        <div class="carousel-dot" data-index="1"></div>
+                        <div class="carousel-dot" data-index="2"></div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-primary" id="wishes-btn">Những lời chúc từ trái tim</button>
+                    <button class="btn" id="memories-btn">Những lời chúc đặc biệt</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-toggle" id="music-toggle">
+            <i class="fas fa-music"></i>
+        </div>
+
+        <!-- Wishes Modal -->
+        <div class="modal" id="wishes-modal">
+            <div class="modal-content">
+                <button class="close-modal" id="close-wishes"><i class="fas fa-times"></i></button>
+                <h3 class="modal-title">Lời chúc từ trái tim</h3>
+                <div class="wishes-content">
+                    <div class="divider"></div>
+                    <div class="poem">
+                        Tình yêu như một đóa hoa<br>
+                        Nở rộ trong tim ta mỗi ngày<br>
+                        Em là mùa xuân của anh<br>
+                        Là niềm vui, là hạnh phúc trọn vẹn
+                    </div>
+                    <p class="message">
+                        Chúc em luôn xinh đẹp, rạng rỡ và tự tin. Em xứng đáng với tất cả những điều tốt đẹp nhất trong
+                        cuộc sống này. Anh hứa sẽ luôn ở bên cạnh, yêu thương và chăm sóc em, không chỉ trong ngày đặc
+                        biệt này mà là mỗi ngày trong cuộc đời chúng ta.
+                    </p>
+                    <div class="divider"></div>
+                    <p class="message">
+                        Mong rằng tình yêu của chúng mình sẽ ngày càng sâu đậm, bền vững theo thời gian. Dù có thế nào,
+                        anh sẽ luôn nắm chặt tay em bước qua mọi khó khăn, thử thách và cùng nhau tận hưởng những khoảnh
+                        khắc hạnh phúc.
+                    </p>
+                    <p class="message"><strong>Anh yêu em rất nhiều! ❤️</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Wishes Modal -->
+        <div class="modal" id="memories-modal">
+            <div class="modal-content">
+                <button class="close-modal" id="close-memories"><i class="fas fa-times"></i></button>
+                <h3 class="modal-title">Những lời chúc đặc biệt</h3>
+                <p class="message">Chạm vào từng bức ảnh để xem lời chúc dành cho em</p>
+                <div class="polaroid-grid">
+                    <div class="polaroid" style="--rotation: -3deg;"
+                        data-memory="Chúc em luôn rạng rỡ như ánh nắng ban mai, tỏa sáng mọi nơi em đến!">
+                        <img src="images/1.jpg" alt="Ảnh 1" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 1</div>
+                    </div>
+                    <div class="polaroid" style="--rotation: 2deg;"
+                        data-memory="Chúc em mãi hạnh phúc, bình an và gặp thật nhiều may mắn trong cuộc sống!">
+                        <img src="images/2.jpg" alt="Ảnh 2" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 2</div>
+                    </div>
+                    <div class="polaroid" style="--rotation: -2deg;"
+                        data-memory="Chúc em luôn mạnh mẽ, tự tin và đạt được mọi ước mơ của mình!">
+                        <img src="images/3.jpg" alt="Ảnh 3" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 3</div>
+                    </div>
+                    <div class="polaroid" style="--rotation: 3deg;"
+                        data-memory="Chúc em mỗi ngày đều tràn đầy niềm vui và những điều tuyệt vời nhất!">
+                        <img src="images/4.jpg" alt="Ảnh 4" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 4</div>
+                    </div>
+                    <div class="polaroid" style="--rotation: -1deg;"
+                        data-memory="Chúc em luôn được yêu thương, trân trọng và hạnh phúc mãi mãi!">
+                        <img src="images/5.jpg" alt="Ảnh 5" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 5</div>
+                    </div>
+                    <div class="polaroid" style="--rotation: 2deg;"
+                        data-memory="Chúc em mãi xinh đẹp, dịu dàng và là nguồn cảm hứng cho mọi người xung quanh!">
+                        <img src="images/6.jpg" alt="Ảnh 6" class="polaroid-img">
+                        <div class="polaroid-caption">Lời chúc 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
